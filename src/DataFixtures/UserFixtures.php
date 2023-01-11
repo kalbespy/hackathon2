@@ -4,12 +4,12 @@ namespace App\DataFixtures;
 
 use App\Entity\User;
 use Doctrine\Bundle\FixturesBundle\Fixture;
+use Doctrine\Common\DataFixtures\DependentFixtureInterface;
 use Doctrine\Persistence\ObjectManager;
 use Symfony\Component\PasswordHasher\Hasher\UserPasswordHasherInterface;
 
-class UserFixtures extends Fixture
+class UserFixtures extends Fixture implements DependentFixtureInterface
 {
-
     private UserPasswordHasherInterface $passwordHasher;
 
     public function __construct(UserPasswordHasherInterface $passwordHasher)
@@ -27,6 +27,8 @@ class UserFixtures extends Fixture
             'moviefan123'
         );
         $user->setPassword($hashedPassword);
+        $user->addVehicle($this->getReference('vehicle_0'));
+        $user->addVehicle($this->getReference('vehicle_5'));
         $manager->persist($user);
         $this->addReference($user->getEmail(), $user);
 
@@ -53,5 +55,12 @@ class UserFixtures extends Fixture
         $this->addReference($admin->getEmail(), $admin);
 
         $manager->flush();
+    }
+
+    public function getDependencies()
+    {
+        return [
+            VehicleFixtures::class,
+        ];
     }
 }
