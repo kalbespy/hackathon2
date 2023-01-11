@@ -34,7 +34,7 @@ class VehicleController extends AbstractController
             return $this->redirectToRoute('app_vehicle_index', [], Response::HTTP_SEE_OTHER);
         }
 
-        return $this->renderForm('vehicle/new.html.twig', [
+        return $this->render('vehicle/new.html.twig', [
             'vehicle' => $vehicle,
             'form' => $form,
         ]);
@@ -60,7 +60,7 @@ class VehicleController extends AbstractController
             return $this->redirectToRoute('app_vehicle_index', [], Response::HTTP_SEE_OTHER);
         }
 
-        return $this->renderForm('vehicle/edit.html.twig', [
+        return $this->render('vehicle/edit.html.twig', [
             'vehicle' => $vehicle,
             'form' => $form,
         ]);
@@ -69,7 +69,7 @@ class VehicleController extends AbstractController
     #[Route('/{id}', name: 'app_vehicle_delete', methods: ['POST'])]
     public function delete(Request $request, Vehicle $vehicle, VehicleRepository $vehicleRepository): Response
     {
-        if ($this->isCsrfTokenValid('delete'.$vehicle->getId(), $request->request->get('_token'))) {
+        if ($this->isCsrfTokenValid('delete' . $vehicle->getId(), $request->request->get('_token'))) {
             $vehicleRepository->remove($vehicle, true);
         }
 
