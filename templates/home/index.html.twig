@@ -1,6 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}MovieCar
+{% block title %}CineCar
 {% endblock %}
 {% block body %}
 
@@ -31,8 +31,8 @@
 
 			<div class="d-flex flex-row justify-content-center">
 
-				<div class="card" style="width: 18rem;">
-					<img class="card-img-top" src="../assets/posters/HomeBanner.jpeg" alt="Card image cap">
+				<div class="card cineCard" style="width: 18rem;">
+					<img class="card-img-top" src="build/images/Batmobilebale.jpeg" alt="Card image cap">
 					<div class="card-body">
 						<h4 class="h4CineCar">Batmobile</h4>
 						<p class="card-text">Batman Returns - 2012</p>
@@ -41,7 +41,16 @@
 				</div>
 
 				<div class="card cineCard" style="width: 18rem;">
-					<img class="card-img-top" src="{{ asset('build/images/Batmobilebale.jpg') }}" alt="Card image cap">
+					<img class="card-img-top" src="build/images/Batmobilebale.jpeg" alt="Card image cap">
+					<div class="card-body">
+						<h4 class="h4CineCar">Batmobile</h4>
+						<p class="card-text">Batman Returns - 2012</p>
+						<button class="btnCardCineCar">SELECT</button>
+					</div>
+				</div>
+
+				<div class="card cineCard" style="width: 18rem;">
+					<img class="card-img-top" src="build/images/Batmobilebale.jpeg" alt="Card image cap">
 					<div class="card-body">
 						<h4 class="h4CineCar">Batmobile</h4>
 						<p class="card-text">Batman Returns - 2012</p>
@@ -63,15 +72,35 @@
 				OUR LATEST CRITICS
 			</h2>
 
-			<div>
+			<div class="d-flex flex-row justify-content-center">
 				<div class="cineCritics">
 					<p>
-						j'ai loué la batmobile pour mon mariage et c' était incroyable ! tout le monde était impressionné et nous avons eu des photos incroyables. le service était excellent et je recommande vivement ce site.
+						"I rented the batmobile for my wedding and it was amazing! Everyone was impressed and we got incredible pictures. The service was excellent and I highly recommend this site."
 					</p>
+					<p class="criticsName">Ibrahim D.</p>
+					<p>11/01/22</p>
 				</div>
-				<div></div>
-				<div></div>
-				<div></div>
+				<div class="cineCritics">
+					<p>
+						"I rented the James Bond car for my bachelor party and it was a dream come true. The service was excellent and we had an amazing day."
+					</p>
+					<p class="criticsName">Ibrahim D.</p>
+					<p>09/01/22</p>
+				</div>
+				<div class="cineCritics">
+					<p>
+						"I rented the Mustang Bullitt for a day of driving and it was the most incredible experience of my life. The vehicle was incredibly powerful and fun to drive. I recommend this site to all car movie enthusiasts."
+					</p>
+					<p class="criticsName">Ibrahim D.</p>
+					<p>08/01/22</p>
+				</div>
+				<div class="cineCritics">
+					<p>
+						"No jet, no wow."
+					</p>
+					<p class="criticsName">Jeff B.</p>
+					<p>07/01/22</p>
+				</div>
 			</div>
 
 		</div>
