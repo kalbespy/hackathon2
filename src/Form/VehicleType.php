@@ -28,9 +28,7 @@ class VehicleType extends AbstractType
             ->add('title')
             ->add('license')
             ->add('picture')
-            ->add('film')
-            ->add('users')
-        ;
+            ->add('film');
     }
 
     public function configureOptions(OptionsResolver $resolver): void
