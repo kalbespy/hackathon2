@@ -9,33 +9,42 @@
 
 .homeTitle {
     color: #000;
-    font: 700 60px Barlow;
+    font: 700 60px Barlow Semi Condensed;
     margin-left: 10%;
     padding-top: 10%;
 }
 
 .h2CineCar {
     color: #000;
-    font: 500 32px Barlow;
+    font: 600 40px Barlow Semi Condensed;
     text-align: center;
     margin-top: 50px;
 }
 
 .h4CineCar {
     color: #000;
-    font: 500 24px Barlow;
+    font: 500 24px Barlow Semi Condensed;
 }
 
 p {
-    font: 500 18px Barlow;
+    font: 500 18px Barlow Semi Condensed;
+}
+
+.criticsName {
+    font: 800 20px Barlow Semi Condensed;
 }
 
 .cineCard {
     border-radius: 0;
     background-color: $lightYellow;
+    width: 500px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
 
     &:hover {
-        box-shadow: 5px 8px 15px 2px rgba(0, 0, 0, 0.31);
+        box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.25);
+        transition: box-shadow 0.3s ease-in-out;
     }
 }
 
@@ -44,7 +53,7 @@ p {
     height: 60px;
     color: $white;
     background-color: $black;
-    font: 600 20px Barlow;
+    font: 600 20px Barlow Semi Condensed;
     text-align: center;
     margin-top: 20px;
 
@@ -60,7 +69,7 @@ p {
     color: $black;
     border-width: 0px;
     background-color: $mainYellow;
-    font: 600 20px Barlow;
+    font: 600 20px Barlow Semi Condensed;
     text-align: center;
     margin-top: 20px;
 
@@ -74,4 +83,6 @@ p {
     background-color: $lightYellow;
     height: 400px;
     width: 280px;
+    margin: 15px;
+    padding: 20px;
 }
