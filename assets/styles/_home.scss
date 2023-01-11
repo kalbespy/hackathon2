@@ -1,0 +1,77 @@
+.headerCineCar {
+    background-image: url(../../assets/posters/HomeBanner.jpg);
+    height: 500px;
+    width: 100%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.homeTitle {
+    color: #000;
+    font: 700 60px Barlow;
+    margin-left: 10%;
+    padding-top: 10%;
+}
+
+.h2CineCar {
+    color: #000;
+    font: 500 32px Barlow;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.h4CineCar {
+    color: #000;
+    font: 500 24px Barlow;
+}
+
+p {
+    font: 500 18px Barlow;
+}
+
+.cineCard {
+    border-radius: 0;
+    background-color: $lightYellow;
+
+    &:hover {
+        box-shadow: 5px 8px 15px 2px rgba(0, 0, 0, 0.31);
+    }
+}
+
+.btnCineCar {
+    width: 250px;
+    height: 60px;
+    color: $white;
+    background-color: $black;
+    font: 600 20px Barlow;
+    text-align: center;
+    margin-top: 20px;
+
+    &:hover {
+        background-color: $mainYellow;
+        color: $black;
+    }
+}
+
+.btnCardCineCar {
+    width: 150px;
+    height: 40px;
+    color: $black;
+    border-width: 0px;
+    background-color: $mainYellow;
+    font: 600 20px Barlow;
+    text-align: center;
+    margin-top: 20px;
+
+    &:hover {
+        background-color: $black;
+        color: $mainYellow;
+    }
+}
+
+.cineCritics {
+    background-color: $lightYellow;
+    height: 400px;
+    width: 280px;
+}
