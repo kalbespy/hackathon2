@@ -1,0 +1,86 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Vehicle{% endblock %}
+
+{% block body %}
+    <h1>Vehicle</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ vehicle.id }}</td>
+            </tr>
+            <tr>
+                <th>Mileage</th>
+                <td>{{ vehicle.mileage }}</td>
+            </tr>
+            <tr>
+                <th>Fuel</th>
+                <td>{{ vehicle.fuel }}</td>
+            </tr>
+            <tr>
+                <th>Category</th>
+                <td>{{ vehicle.category }}</td>
+            </tr>
+            <tr>
+                <th>GeneralCondition</th>
+                <td>{{ vehicle.generalCondition }}</td>
+            </tr>
+            <tr>
+                <th>Transmition</th>
+                <td>{{ vehicle.transmition }}</td>
+            </tr>
+            <tr>
+                <th>NbPlace</th>
+                <td>{{ vehicle.nbPlace }}</td>
+            </tr>
+            <tr>
+                <th>Availability</th>
+                <td>{{ vehicle.availability ? 'Yes' : 'No' }}</td>
+            </tr>
+            <tr>
+                <th>Location</th>
+                <td>{{ vehicle.location }}</td>
+            </tr>
+            <tr>
+                <th>Consumption</th>
+                <td>{{ vehicle.consumption }}</td>
+            </tr>
+            <tr>
+                <th>Emissions</th>
+                <td>{{ vehicle.emissions }}</td>
+            </tr>
+            <tr>
+                <th>Gps</th>
+                <td>{{ vehicle.gps ? 'Yes' : 'No' }}</td>
+            </tr>
+            <tr>
+                <th>AirConditioning</th>
+                <td>{{ vehicle.airConditioning ? 'Yes' : 'No' }}</td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>{{ vehicle.description }}</td>
+            </tr>
+            <tr>
+                <th>Title</th>
+                <td>{{ vehicle.title }}</td>
+            </tr>
+            <tr>
+                <th>License</th>
+                <td>{{ vehicle.license }}</td>
+            </tr>
+            <tr>
+                <th>Picture</th>
+                <td>{{ vehicle.picture }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('app_vehicle_index') }}">back to list</a>
+
+    <a href="{{ path('app_vehicle_edit', {'id': vehicle.id}) }}">edit</a>
+
+    {{ include('vehicle/_delete_form.html.twig') }}
+{% endblock %}
