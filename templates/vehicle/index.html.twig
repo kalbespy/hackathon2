@@ -4,7 +4,9 @@
 {% endblock %}
 
 {% block body %}
+
 	<h1>Vehicle index</h1>
+
 	<div class="card" style="width: 18rem;">
 		<img src="..." class="card-img-top" alt="...">
 		<div class="card-body">
@@ -14,9 +16,7 @@
 		</div>
 	</div>
 
-
 	{% for vehicle in vehicles %}
-
 
 		<div class="card" style="width: 18rem;">
 			<img src="{{asset('build/images/' ~ vehicle.picture)}}" class="card-img-top" alt="...">

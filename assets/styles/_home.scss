@@ -30,10 +30,16 @@ p {
     font: 500 18px Barlow Semi Condensed;
 }
 
+.criticsName {
+    font: 800 20px Barlow Semi Condensed;
+}
+
 .cineCard {
     border-radius: 0;
     background-color: $lightYellow;
-    margin-left: 40px;
+    width: 500px;
+    margin-left: 20px;
+    margin-right: 20px;
     margin-top: 20px;
 
     &:hover {
