@@ -41,6 +41,12 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     #[ORM\ManyToMany(targetEntity: Vehicle::class, inversedBy: 'users')]
     private Collection $vehicle;
 
+    #[ORM\Column(length: 255, nullable: true)]
+    private ?string $firstname = null;
+
+    #[ORM\Column(length: 255, nullable: true)]
+    private ?string $lastname = null;
+
     public function __construct()
     {
         $this->comments = new ArrayCollection();
@@ -191,6 +197,30 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     public function removeVehicle(Vehicle $vehicle): self
     {
         $this->vehicle->removeElement($vehicle);
+
+        return $this;
+    }
+
+    public function getFirstname(): ?string
+    {
+        return $this->firstname;
+    }
+
+    public function setFirstname(?string $firstname): self
+    {
+        $this->firstname = $firstname;
+
+        return $this;
+    }
+
+    public function getLastname(): ?string
+    {
+        return $this->lastname;
+    }
+
+    public function setLastname(?string $lastname): self
+    {
+        $this->lastname = $lastname;
 
         return $this;
     }
