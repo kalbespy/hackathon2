@@ -1,0 +1,65 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Vehicle index{% endblock %}
+
+{% block body %}
+    <h1>Vehicle index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Mileage</th>
+                <th>Fuel</th>
+                <th>Category</th>
+                <th>GeneralCondition</th>
+                <th>Transmition</th>
+                <th>NbPlace</th>
+                <th>Availability</th>
+                <th>Location</th>
+                <th>Consumption</th>
+                <th>Emissions</th>
+                <th>Gps</th>
+                <th>AirConditioning</th>
+                <th>Description</th>
+                <th>Title</th>
+                <th>License</th>
+                <th>Picture</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for vehicle in vehicles %}
+            <tr>
+                <td>{{ vehicle.id }}</td>
+                <td>{{ vehicle.mileage }}</td>
+                <td>{{ vehicle.fuel }}</td>
+                <td>{{ vehicle.category }}</td>
+                <td>{{ vehicle.generalCondition }}</td>
+                <td>{{ vehicle.transmition }}</td>
+                <td>{{ vehicle.nbPlace }}</td>
+                <td>{{ vehicle.availability ? 'Yes' : 'No' }}</td>
+                <td>{{ vehicle.location }}</td>
+                <td>{{ vehicle.consumption }}</td>
+                <td>{{ vehicle.emissions }}</td>
+                <td>{{ vehicle.gps ? 'Yes' : 'No' }}</td>
+                <td>{{ vehicle.airConditioning ? 'Yes' : 'No' }}</td>
+                <td>{{ vehicle.description }}</td>
+                <td>{{ vehicle.title }}</td>
+                <td>{{ vehicle.license }}</td>
+                <td>{{ vehicle.picture }}</td>
+                <td>
+                    <a href="{{ path('app_vehicle_show', {'id': vehicle.id}) }}">show</a>
+                    <a href="{{ path('app_vehicle_edit', {'id': vehicle.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="18">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('app_vehicle_new') }}">Create new</a>
+{% endblock %}
