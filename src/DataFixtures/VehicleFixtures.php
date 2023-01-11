@@ -4,9 +4,10 @@ namespace App\DataFixtures;
 
 use App\Entity\Vehicle;
 use Doctrine\Bundle\FixturesBundle\Fixture;
+use Doctrine\Common\DataFixtures\DependentFixtureInterface;
 use Doctrine\Persistence\ObjectManager;
 
-class VehicleFixtures extends Fixture
+class VehicleFixtures extends Fixture implements DependentFixtureInterface
 {
 
     const VEHICLES = [
@@ -344,4 +345,12 @@ class VehicleFixtures extends Fixture
         }
     $manager->flush();
     }
+
+    public function getDependencies()
+    {
+        return [
+            MovieFixtures::class,
+        ];
+    }
+
 }
