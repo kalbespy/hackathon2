@@ -13,11 +13,19 @@ use Symfony\Component\Routing\Annotation\Route;
 #[Route('/vehicle')]
 class VehicleController extends AbstractController
 {
-    #[Route('/', name: 'app_vehicle_index', methods: ['GET'])]
-    public function index(VehicleRepository $vehicleRepository): Response
+    #[Route('/', name: 'app_vehicle_index', methods: ['GET', 'POST'])]
+    public function index(Request $request, VehicleRepository $vehicleRepository): Response
     {
+        if ($request->isMethod('POST')) {
+            $search = $request->get('search');
+
+            $vehicles = $vehicleRepository->findLikeName($search);
+        } else {
+            $vehicles = $vehicleRepository->findAll();
+        }
+
         return $this->render('vehicle/index.html.twig', [
-            'vehicles' => $vehicleRepository->findAll(),
+            'vehicles' => $vehicles,
         ]);
     }
 

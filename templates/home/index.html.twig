@@ -12,6 +12,15 @@
 				DRIVE INTO<br>THE SPOTLIGHT
 			</h1>
 
+			<form action="{{ path('app_vehicle_index') }}" method="post" class="d-none d-lg-block mt-3 mb-4">
+				<div class="form-row formSearchOffer">
+					<div class="form-group col-md-6 searchOffer">
+						<label for="inputSearch">Car name</label>
+						<input type="text" name="search" class="form-control" placeholder="Batmobile">
+					</div>
+					<button type="submit" class="">Search</button>
+				</div>
+			</form>
 		</div>
 
 		<div class="">
