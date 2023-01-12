@@ -3,6 +3,7 @@
 {% block title %}{% endblock %}
 
 {% block body %}
+
 	<div class="bodyShow text-white text-center">
 		<h1 class="h2showPage">{{ vehicle.title }}
 		</h1>
@@ -45,7 +46,11 @@
 							</li>
 							<li>
 								<strong>Availability:</strong>
-								{{ vehicle.availability }}
+								{% if vehicle.availability %}
+									Available
+								{% else %}
+									Not Available
+								{% endif %}
 							</li>
 						</ul>
 						<ul class="text-white ulShow2">
@@ -64,11 +69,19 @@
 							</li>
 							<li>
 								<strong>Gps:</strong>
-								{{ vehicle.gps }}
+								{% if vehicle.gps %}
+									Yes
+								{% else %}
+									No
+								{% endif %}
 							</li>
 							<li>
 								<strong>Air Conditioning:</strong>
-								{{ vehicle.airConditioning }}
+								{% if vehicle.airConditioning %}
+									Yes
+								{% else %}
+									No
+								{% endif %}
 							</li>
 							<li>
 								<strong>Title:</strong>
@@ -84,7 +97,9 @@
 
 			</div>
 		</main>
-		<button class="btnCardCineCar mb-5">
-			SELECT</button>
+		<a href="{{ path('app_vehicle_book', {'id': vehicle.id}) }}">
+			<button class="btnCineCar mb-5">
+				BOOK THIS CAR</button>
+		</a>
 	</div>
 {% endblock %}

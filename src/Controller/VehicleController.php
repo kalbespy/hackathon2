@@ -83,6 +83,16 @@ class VehicleController extends AbstractController
         ]);
     }
 
+    #[Route('/{id}/book', name: 'app_vehicle_book', methods: ['GET', 'POST'])]
+    public function book(Vehicle $vehicle, VehicleRepository $vehicleRepository)
+    {
+        $vehicle->setAvailability(false);
+
+        $vehicleRepository->save($vehicle, true);
+
+        return $this->redirectToRoute('app_vehicle_index', [], Response::HTTP_SEE_OTHER);
+    }
+
     #[Route('/{id}', name: 'app_vehicle_delete', methods: ['POST'])]
     public function delete(Request $request, Vehicle $vehicle, VehicleRepository $vehicleRepository): Response
     {
