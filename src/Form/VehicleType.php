@@ -2,7 +2,9 @@
 
 namespace App\Form;
 
+use App\Entity\Movie;
 use App\Entity\Vehicle;
+use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
@@ -12,6 +14,7 @@ class VehicleType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options): void
     {
         $builder
+            ->add('title')
             ->add('mileage')
             ->add('fuel')
             ->add('category')
@@ -25,10 +28,14 @@ class VehicleType extends AbstractType
             ->add('gps')
             ->add('airConditioning')
             ->add('description')
-            ->add('title')
             ->add('license')
             ->add('picture')
-            ->add('film')
+            ->add('movie', EntityType::class, [
+                'class' => Movie::class,
+                'choice_label' => 'title',
+                'multiple' => false,
+                'expanded' => false,
+            ])
             ->add('quote');
     }
 
