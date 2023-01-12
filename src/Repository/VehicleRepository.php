@@ -49,15 +49,31 @@ class VehicleRepository extends ServiceEntityRepository
         return $queryBuilder->getResult();
     }
 
-
-    public function findLikeMovie(string $movie): array
+    public function findLikeMovieName(string $movieName): array
     {
         $queryBuilder = $this->createQueryBuilder('v')
-            ->where('v.film LIKE :name')
-            ->setParameter('name', '%' . $movie . '%')
+            ->join('v.film', 'm')
+            ->select('v', 'm')
+            ->where('m.title LIKE :movieName')
+            ->setParameter('movieName', '%' . $movieName . '%')
             ->orderBy('v.title', 'ASC')
             ->getQuery();
+
         return $queryBuilder->getResult();
+    }
+
+    // SELECT * FROM vehicle as v
+    // JOIN movie as m ON m.id=v.film_id;
+
+    public function allGamesWithStudios()
+    {
+        return $this->createQueryBuilder('g')
+            ->join('g.studio', 's')
+            ->select('g', 's')
+            ->andWhere('s.status = 1')
+            ->orderBy('s.name', 'ASC')
+            ->getQuery()
+            ->getResult();
     }
 
     //    /**
