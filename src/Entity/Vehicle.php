@@ -291,9 +291,9 @@ class Vehicle
         return $this;
     }
 
-    public function getFilm(): ?string
+    public function getFilm(): ?Movie
     {
-        return (string) $this->film;
+        return $this->film;
     }
 
     public function setFilm(?Movie $film): self

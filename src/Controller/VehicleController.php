@@ -2,8 +2,10 @@
 
 namespace App\Controller;
 
+use App\Entity\Movie;
 use App\Entity\Vehicle;
 use App\Form\VehicleType;
+use App\Repository\MovieRepository;
 use App\Repository\VehicleRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
@@ -14,7 +16,7 @@ use Symfony\Component\Routing\Annotation\Route;
 class VehicleController extends AbstractController
 {
     #[Route('/', name: 'app_vehicle_index', methods: ['GET', 'POST'])]
-    public function index(Request $request, VehicleRepository $vehicleRepository): Response
+    public function index(Request $request, MovieRepository $movieRepository, VehicleRepository $vehicleRepository): Response
     {
         if ($request->isMethod('POST')) {
             $searchCar = $request->get('searchCar');
@@ -23,8 +25,9 @@ class VehicleController extends AbstractController
             if ($searchCar) {
                 $vehicles = $vehicleRepository->findLikeName($searchCar);
             }
+
             if ($searchMovie) {
-                $vehicles = $vehicleRepository->findLikeMovie($searchMovie);
+                $vehicles = $vehicleRepository->findLikeMovieName($searchMovie);
             }
         } else {
             $vehicles = $vehicleRepository->findAll();

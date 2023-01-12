@@ -18,7 +18,7 @@ class MovieFixtures extends Fixture
             'year' => "1983",
         ],
         [
-            'title' => "The Dark Knight",
+            'title' => "Batman: The Dark Knight",
             'year' => "2008",
         ],
         [
@@ -42,7 +42,7 @@ class MovieFixtures extends Fixture
             'year' => "1964",
         ],
         [
-            'title' => "K 2000",
+            'title' => "K2000",
             'year' => "1982",
         ],
         [
@@ -50,7 +50,7 @@ class MovieFixtures extends Fixture
             'year' => "2015",
         ],
         [
-            'title' => "Mad Max Beyond Thunderdome",
+            'title' => "Mad Max 2: Beyond Thunderdome",
             'year' => "1985",
         ],
         [
@@ -63,7 +63,7 @@ class MovieFixtures extends Fixture
         ],
         [
             'title' => "Pokémon",
-            'year' => "1998", 13
+            'year' => "1998",
         ],
         [
             'title' => "Back to the Future",
