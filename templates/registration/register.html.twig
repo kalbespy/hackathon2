@@ -4,29 +4,35 @@
 {% endblock %}
 
 {% block body %}
+
+<h1 class="text-center m-2">Register</h1>
 	<main class="mainForm d-flex justify-content-center">
 		<div class="formBG">
 			<form action="{{ path('app_register') }}" method="post">
-				<h1 class="text-center">Register</h1>
 
 				{{ form_start(registrationForm) }}
-				<label for="username" class="textFormLabel">Firstname:
-					{{ form_row(registrationForm.firstname) }}</label>
-				<label for="username" class="textFormLabel">lastname
-					{{ form_row(registrationForm.lastname) }}</label>
-				<label for="email" class="textFormLabel">Email:
-					{{ form_row(registrationForm.email) }}</label>
-				<div>
-						{{ form_row(registrationForm.plainPassword, {
-            label: 'Password'
-                        }) }}
-					<input type="password" id="password" name="_password" class="form-control textForm rounded-0">
+				<div class="form-group">
+					<label for="username" class="textFormLabel">
+						{{ form_row(registrationForm.firstname) }}</label>
 				</div>
-				{{ form_row(registrationForm.agreeTerms) }}
+				<div class="form-group">
+					<label for="username" class="textFormLabel">
+						{{ form_row(registrationForm.lastname) }}</label>
+				</div>
+				<div class="form-group">
+					<label for="email" class="textFormLabel">
+						{{ form_row(registrationForm.email) }}</label>
+				</div>
+				<div class="form-group">
+					<label for="email" class="textFormLabel">{{ form_row(registrationForm.plainPassword, {
+            label: 'Password'
+                        }) }}</label>
+				</div>
+
+				<div class="textFormLabel">{{ form_row(registrationForm.agreeTerms) }}</div>
 
 				<button type="submit" class="btnCineCar">Register</button>
 				{{ form_end(registrationForm) }}
-
 			</form>
 		</div>
 	</main>
