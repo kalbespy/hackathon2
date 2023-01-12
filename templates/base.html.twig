@@ -17,7 +17,44 @@
 			{{ encore_entry_script_tags('app') }}
 		{% endblock %}
 	</head>
+	<div class="container-fluid">
+		<div class="row">
+			<nav class="navbar navbar-expand-lg bg-warning">
+
+				<div class="collapse container-fluid navbar-collapse justify-content-center" id="navbarNav">
+					<a class="navbar-brand" href="/">
+						<img src="{{ asset('/build/images/Groupe-7.png') }}" class="img-logo mx-2" alt="Logo">
+					</a>
+					<ul class="navbar-nav">
+
+						<li class="textMenu">
+							<a class="nav-link fw-bold textMenu" href="{{ path('app_vehicle_index') }}">SEE THE FLEET</a>
+						</li>
+
+						<li class="textMenu">
+							<a class="nav-link fw-bold textMenu" href="{{ path('app_login') }}">CONNECT</a>
+						</li>
+
+						<li class="textMenu">
+							<a class="nav-link textMenu" href="#"></a>
+						</li>
+
+					</ul>
+				</div>
+			</nav>
+		</div>
+	</div>
 	<body>
 		{% block body %}{% endblock %}
 	</body>
+	<footer class="footerNav">
+		<div class="d-flex align-items-center justify-content-center">
+			<a class="navbar-brand" href="/">
+				<img src="{{ asset('/build/images/LogoFooter.png') }}" class="img-logo logoFooter" alt="Logo">
+			</a>
+		</div>
+		<div d-flex align-items-center justify-content-center>
+			<p class="textFooter">© 2022 CineCarCompany, Inc, Conglomarate</p>
+		</div>
+	</footer>
 </html>
