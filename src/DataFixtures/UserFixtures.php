@@ -20,17 +20,66 @@ class UserFixtures extends Fixture implements DependentFixtureInterface
     public function load(ObjectManager $manager): void
     {
         $user = new User();
-        $user->setEmail('moviefan@yahoo.com');
+        $user->setEmail('mortym@yahoo.com');
+        $user->setFirstname('Morty');
+        $user->setLastname('McFly');
         $user->setRoles(['ROLE_USER']);
         $hashedPassword = $this->passwordHasher->hashPassword(
             $user,
-            'moviefan123'
+            'morty123'
         );
         $user->setPassword($hashedPassword);
         $user->addVehicle($this->getReference('vehicle_0'));
         $user->addVehicle($this->getReference('vehicle_5'));
         $manager->persist($user);
         $this->addReference($user->getEmail(), $user);
+
+        $user = new User();
+        $user->setEmail('jeffb@yahoo.com');
+        $user->setFirstname('Jeff');
+        $user->setLastname('B');
+        $user->setRoles(['ROLE_USER']);
+        $hashedPassword = $this->passwordHasher->hashPassword(
+            $user,
+            'jeff123'
+        );
+        $user->setPassword($hashedPassword);
+        $user->addVehicle($this->getReference('vehicle_6'));
+        $user->addVehicle($this->getReference('vehicle_15'));
+        $manager->persist($user);
+        $this->addReference($user->getEmail(), $user);
+
+
+        $user = new User();
+        $user->setEmail('bricew@yahoo.com');
+        $user->setFirstname('Brice');
+        $user->setLastname('Wayne');
+        $user->setRoles(['ROLE_USER']);
+        $hashedPassword = $this->passwordHasher->hashPassword(
+            $user,
+            'brice123'
+        );
+        $user->setPassword($hashedPassword);
+        $user->addVehicle($this->getReference('vehicle_3'));
+        $manager->persist($user);
+        $this->addReference($user->getEmail(), $user);
+
+
+        $user = new User();
+        $user->setEmail('daveh@yahoo.com');
+        $user->setFirstname('Dave');
+        $user->setLastname('Hasselhoff');
+        $user->setRoles(['ROLE_USER']);
+        $hashedPassword = $this->passwordHasher->hashPassword(
+            $user,
+            'dave123'
+        );
+        $user->setPassword($hashedPassword);
+        $user->addVehicle($this->getReference('vehicle_7'));
+        $user->addVehicle($this->getReference('vehicle_13'));
+        $manager->persist($user);
+        $this->addReference($user->getEmail(), $user);
+
 
         $admin = new User();
         $admin->setEmail('admin@libertysurf.com');
@@ -42,6 +91,7 @@ class UserFixtures extends Fixture implements DependentFixtureInterface
         $admin->setPassword($hashedPassword);
         $manager->persist($admin);
         $this->addReference($admin->getEmail(), $admin);
+
 
         $admin = new User();
         $admin->setEmail('cinecar@aol.com');
@@ -56,6 +106,7 @@ class UserFixtures extends Fixture implements DependentFixtureInterface
 
         $manager->flush();
     }
+
 
     public function getDependencies()
     {
