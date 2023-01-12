@@ -4,29 +4,28 @@
 {% endblock %}
 
 {% block body %}
-
-<h1 class="text-center m-2">Register</h1>
 	<main class="mainForm d-flex justify-content-center">
 		<div class="formBG">
 			<form action="{{ path('app_register') }}" method="post">
 
 				{{ form_start(registrationForm) }}
-				<div class="form-group">
-					<label for="username" class="textFormLabel">
-						{{ form_row(registrationForm.firstname) }}</label>
+				<div class="form-group divForm">
+					<label for="username" class="textFormLabel"></label>
+						<input type="hidden" class="form-control textFormLabel textForm rounded-0"{{ form_row(registrationForm.firstname) }}>
 				</div>
 				<div class="form-group">
-					<label for="username" class="textFormLabel">
-						{{ form_row(registrationForm.lastname) }}</label>
+					<label for="username" class="textFormLabel text-white"></label>
+						<input type="hidden" class="form-control textForm rounded-0 text-white"{{ form_row(registrationForm.lastname) }}>
 				</div>
 				<div class="form-group">
-					<label for="email" class="textFormLabel">
-						{{ form_row(registrationForm.email) }}</label>
+					<label for="email" class="textFormLabel"></label>
+						<input type="hidden" class="form-control textForm rounded-0"{{ form_row(registrationForm.email) }}></input>
 				</div>
 				<div class="form-group">
-					<label for="email" class="textFormLabel">{{ form_row(registrationForm.plainPassword, {
+					<label for="email" class="textFormLabel"></label>
+					<input type="hidden" class="form-control textForm rounded-0"{{ form_row(registrationForm.plainPassword, {
             label: 'Password'
-                        }) }}</label>
+                        }) }}></input>
 				</div>
 
 				<div class="textFormLabel">{{ form_row(registrationForm.agreeTerms) }}</div>
