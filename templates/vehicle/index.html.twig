@@ -5,8 +5,14 @@
 
 {% block body %}
 
-
 	<main class="mainIndex">
+		{% for category, messages in app.flashes %}
+			{% for message in messages %}
+				<div class="alert alert-{{ category }} d-flex justify-content-center">
+					<strong>{{ message }}</strong>
+				</div>
+			{% endfor %}
+		{% endfor %}
 
 		<h1 class="indexTitle">OUR MOVIE VEHICLES FLEET</h1>
 
