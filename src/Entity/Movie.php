@@ -70,7 +70,7 @@ class Movie
     {
         if (!$this->vehicle->contains($vehicle)) {
             $this->vehicle->add($vehicle);
-            $vehicle->setFilm($this);
+            $vehicle->setMovie($this);
         }
 
         return $this;
@@ -80,8 +80,8 @@ class Movie
     {
         if ($this->vehicle->removeElement($vehicle)) {
             // set the owning side to null (unless already changed)
-            if ($vehicle->getFilm() === $this) {
-                $vehicle->setFilm(null);
+            if ($vehicle->getMovie() === $this) {
+                $vehicle->setMovie(null);
             }
         }
 
