@@ -27,10 +27,7 @@ class VehicleController extends AbstractController
             }
 
             if ($searchMovie) {
-                $movie = $movieRepository->findOneBy([$searchMovie]);
-                dd($movie);
-
-                $vehicles = $vehicleRepository->findLikeMovie($searchMovie);
+                $vehicles = $vehicleRepository->findLikeMovieName($searchMovie);
             }
         } else {
             $vehicles = $vehicleRepository->findAll();
