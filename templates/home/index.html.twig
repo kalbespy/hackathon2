@@ -11,16 +11,27 @@
 			<h1 class="homeTitle">
 				DRIVE INTO<br>THE SPOTLIGHT
 			</h1>
-
-			<form action="{{ path('app_vehicle_index') }}" method="post" class="d-none d-lg-block mt-3 mb-4">
-				<div class="form-row formSearchOffer">
-					<div class="form-group col-md-6 searchOffer">
-						<label for="inputSearch">Car name</label>
-						<input type="text" name="search" class="form-control" placeholder="Batmobile">
+			<div class="searchBar mt-5 p-4">
+				<h2>FIND A VEHICLE</h2>
+				<form action="{{ path('app_vehicle_index') }}" method="post">
+					<div class="form-row d-flex">
+						<div class="form-group col-md-4 me-2">
+							<label for="inputSearch" class="mb-2">
+								<em class="mb-5">Find a Vehicle</em>
+							</label>
+							<input type="text" name="searchCar" class="form-control searchInput rounded-0" placeholder="ex: KITT">
+						</div>
+						<div class="form-group col-md-4 ms-2 me-2">
+							<label for="inputSearch" class="mb-2">
+								<em>or a Movie</em>
+							</label>
+							<input type="text" name="searchMovie" class="form-control searchInput rounded-0" placeholder="ex: K2000">
+						</div>
+						<button type="submit" class="searchBtn ms-2">SEARCH</button>
 					</div>
-					<button type="submit" class="">Search</button>
-				</div>
-			</form>
+				</form>
+			</div>
+
 		</div>
 
 		<div class="">
@@ -74,28 +85,28 @@
 
 			<div class="d-flex flex-row flex-wrap justify-content-center">
 				<div>
-					<img class="logoHome" src="build/images/logoScooby.png" alt="Logo Scooby">
+					<img class="logoHome" src="build/images/LogoScooby.png" alt="Logo Scooby">
 				</div>
 				<div>
-					<img class="logoHome" src="build/images/logoBatman.png" alt="Logo Scooby">
+					<img class="logoHome" src="build/images/LogoBatman.png" alt="Logo Scooby">
 				</div>
 				<div>
-					<img class="logoHome" src="build/images/logoMadMax.png" alt="Logo Scooby">
+					<img class="logoHome" src="build/images/LogoMadMax.png" alt="Logo Scooby">
 				</div>
 				<div>
-					<img class="logoHome" src="build/images/logoGhost.png" alt="Logo Scooby">
+					<img class="logoHome" src="build/images/LogoGhost.png" alt="Logo Scooby">
 				</div>
 			</div>
 
 			<div class="d-flex flex-row flex-wrap justify-content-center">
 				<div>
-					<img class="logoHome" src="build/images/logoPokemon.png" alt="Logo Scooby">
+					<img class="logoHome" src="build/images/LogoPokemon.png" alt="Logo Scooby">
 				</div>
 				<div>
-					<img class="logoHome" src="build/images/logoBackFuture.png" alt="Logo Scooby">
+					<img class="logoHome" src="build/images/LogoBackFuture.png" alt="Logo Scooby">
 				</div>
 				<div>
-					<img class="logoHome" src="build/images/logoOuiOui.png" alt="Logo Scooby">
+					<img class="logoHome" src="build/images/LogoOuiOui.png" alt="Logo Scooby">
 				</div>
 			</div>
 
