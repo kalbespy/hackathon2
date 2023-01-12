@@ -45,7 +45,7 @@ class VehicleFixtures extends Fixture implements DependentFixtureInterface
             'airConditioning' => 'False',
             'title' => 'The A-Team Van',
             'license' => 'B',
-            'picture' => 'agenceTousRisque.jpeg',
+            'picture' => 'agenceTousRisque.jpg',
             'film' => '1',
             'description' => "The A-Team van is the ultimate crime-fighting vehicle, equipped with everything you need to take down bad guys and make a quick getaway. It's got a bold black and red color scheme, complete with a custom 'A-Team' logo painted on the side."
         ],
@@ -84,7 +84,7 @@ class VehicleFixtures extends Fixture implements DependentFixtureInterface
             'airConditioning' => 'false',
             'title' => 'Batmobile form the Dark knight',
             'license' => 'BatLicense',
-            'picture' => 'Batmobilebale.jpeg',
+            'picture' => 'Batmobilebale.jpg',
             'film' => '3',
             'description' => "The batmobile is a sleek, black vehicle that combines speed and stealth, making it the ultimate crime-fighting machine. It has all the bells and whistles you would expect from a superhero's ride, including bat-shaped headlights, bat-shaped tail fins, and even a bat-shaped steering wheel (because why not?)."
         ],
@@ -122,7 +122,7 @@ class VehicleFixtures extends Fixture implements DependentFixtureInterface
             'airConditioning' => 'false',
             'title' => 'Bumblebee',
             'license' => 'B',
-            'picture' => 'bumblebeVoiture.jpeg',
+            'picture' => 'bumblebeVoiture.jpg',
             'film' => '5',
             'description' => "Bumblebee is a Camaro that packs a punch, both in terms of looks and performance. This car is a true transformer, it goes from a regular looking Camaro to a fierce robot with the touch of a button."
         ],
@@ -160,7 +160,7 @@ class VehicleFixtures extends Fixture implements DependentFixtureInterface
             'airConditioning' => 'false',
             'title' => 'Aston Martin',
             'license' => 'B',
-            'picture' => 'jamesBond.jpeg',
+            'picture' => 'jamesBond.jpg',
             'film' => '7',
             'description' => "James Bond's Aston Martin is the ultimate spy car. It's got everything a secret agent could want: a sleek design, powerful engine, and more gadgets than Q Branch. All in all, this is a car that will make you feel like a true spy, just remember to bring your passport, in case you need to make a quick escape to exotic location."
         ],
@@ -198,7 +198,7 @@ class VehicleFixtures extends Fixture implements DependentFixtureInterface
             'airConditioning' => 'false',
             'title' => 'Mad Max Fury Road Car',
             'license' => 'None',
-            'picture' => 'mad_max_voiture.webp',
+            'picture' => 'mad_max_voiture.jpg',
             'film' => '9',
             'description' => "The cars from Mad Max Fury Road are like rolling fortresses, decked out with spikes, armor, and enough fire-breathing exhaust pipes to make any dystopian warlord jealous. They are a wild and colorful bunch, each one more intimidating and dangerous than the last, and are sure to make a statement whether they are racing across the wasteland or causing chaos on the Fury Road."
         ],
@@ -217,7 +217,7 @@ class VehicleFixtures extends Fixture implements DependentFixtureInterface
             'airConditioning' => 'false',
             'title' => 'Mad Max 2 car',
             'license' => 'None',
-            'picture' => 'Fury_Road_Doof_Wagon.webp',
+            'picture' => 'Fury_Road_Doof_Wagon.jpg',
             'film' => '10',
             'description' => "Mad Max's car, the 'Interceptor', is a post-apocalyptic road warrior's dream machine. It's got a variety of modifications such as reinforced roll cage, mounted machine guns, and front-mounted spikes, which will come in handy when you're trying to fend off marauders and warlords."
         ],
@@ -236,7 +236,7 @@ class VehicleFixtures extends Fixture implements DependentFixtureInterface
             'airConditioning' => 'False',
             'title' => 'Mistery Machine',
             'license' => 'B',
-            'picture' => 'MisteryMachine.jpeg',
+            'picture' => 'MisteryMachine.jpg',
             'film' => '11',
             'description' => "The Mystery Machine, from the classic cartoon Scooby-Doo, is the ultimate mystery-solving vehicle. With a powerful engine, it can take you to any location, be it an old mansion, a spooky theme park, or even an abandoned mine, in search of ghosts, ghouls, and other supernatural phenomena."
         ],
@@ -274,7 +274,7 @@ class VehicleFixtures extends Fixture implements DependentFixtureInterface
             'airConditioning' => 'False',
             'title' => 'PikaCar',
             'license' => 'B',
-            'picture' => 'pikachu.webp',
+            'picture' => 'pikachu.jpg',
             'film' => '13',
             'description' => "Pikachu's mobile is a car that's just as electric and energetic as the Pokémon himself. It's powered by Pikachu's electricity, so it never needs to be charged."
         ],
@@ -293,7 +293,7 @@ class VehicleFixtures extends Fixture implements DependentFixtureInterface
             'airConditioning' => 'false',
             'title' => 'Batmobile first model',
             'license' => 'BatLicense',
-            'picture' => 'premiereBatmobile.jpeg',
+            'picture' => 'premiereBatmobile.jpg',
             'film' => '4',
             'description' => "The Batmobile is like a sports car on steroids, but with more bat symbols. It's got everything: bat-shaped headlights, bat-shaped tail fins, bat-shaped cup holders (for those emergency bat-signal latte situations). It's also got an ejector seat, in case Batman needs to make a quick bat-escape. And let's not forget the bat-computer, which is basically just like a regular computer, but with more batman emojis."
         ],
@@ -331,7 +331,7 @@ class VehicleFixtures extends Fixture implements DependentFixtureInterface
             'airConditioning' => 'true',
             'title' => 'Taxi',
             'license' => 'Who cares, you are going to lose it anyway...',
-            'picture' => 'taxi.jpeg',
+            'picture' => 'taxi.jpg',
             'film' => '15',
             'description' => "The car from the Taxi movies, is a modified Checker cab that is built to handle the wildest of chases and craziest of stunts. It's got a bulletproof body, a powerful engine and a suspension system that can handle all the jumps, spins and donuts that taxi driver Jimmy Fallon can throw at it."
         ],

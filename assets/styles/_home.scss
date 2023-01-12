@@ -1,3 +1,11 @@
+main {
+    background-color: $black;
+    background-image: url(../../assets/posters/BG_Home.png);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .headerCineCar {
     background-image: url(../../assets/posters/HomeBanner.jpg);
     height: 500px;
@@ -15,15 +23,16 @@
 }
 
 .h2CineCar {
-    color: #000;
-    font: 600 40px Barlow Semi Condensed;
+    color: $mainYellow;
+    font: 600 42px Barlow Semi Condensed;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 80px;
+    margin-bottom: 30px;
 }
 
 .h4CineCar {
     color: #000;
-    font: 500 24px Barlow Semi Condensed;
+    font: 600 26px Barlow Semi Condensed;
 }
 
 p {
@@ -36,7 +45,7 @@ p {
 
 .cineCard {
     border-radius: 0;
-    background-color: $lightYellow;
+    background-color: $mainYellow;
     width: 500px;
     margin-left: 20px;
     margin-right: 20px;
@@ -51,23 +60,7 @@ p {
 .btnCineCar {
     width: 250px;
     height: 60px;
-    color: $white;
-    background-color: $black;
-    font: 600 20px Barlow Semi Condensed;
-    text-align: center;
-    margin-top: 20px;
-
-    &:hover {
-        background-color: $mainYellow;
-        color: $black;
-    }
-}
-
-.btnCardCineCar {
-    width: 150px;
-    height: 40px;
     color: $black;
-    border-width: 0px;
     background-color: $mainYellow;
     font: 600 20px Barlow Semi Condensed;
     text-align: center;
@@ -75,14 +68,51 @@ p {
 
     &:hover {
         background-color: $black;
+        border-width: 2px;
+        border-color: $mainYellow;
         color: $mainYellow;
     }
 }
 
+.btnCardCineCar {
+    width: 200px;
+    height: 50px;
+    color: $mainYellow;
+    border-width: 2px;
+    background-color: $black;
+    font: 600 20px Barlow Semi Condensed;
+    text-align: center;
+    margin-top: 20px;
+
+    &:hover {
+        background-color: $mainYellow;
+        border-width: 2px;
+        border-color: $black;
+        color: $black;
+    }
+}
+
 .cineCritics {
-    background-color: $lightYellow;
-    height: 400px;
+    background-color: $mainYellow;
+    height: 330px;
     width: 280px;
     margin: 15px;
     padding: 20px;
+}
+
+.starCritics {
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+.rotate1 {
+    transform: rotate(1deg);
+}
+
+.rotate-1 {
+    transform: rotate(-1deg);
+}
+
+.logoHome {
+    margin: 20px;
 }
