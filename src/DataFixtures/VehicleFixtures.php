@@ -84,7 +84,7 @@ class VehicleFixtures extends Fixture implements DependentFixtureInterface
             'airConditioning' => 'false',
             'title' => 'Batmobile form the Dark knight',
             'license' => 'BatLicense',
-            'picture' => 'batmobilebale.jpeg',
+            'picture' => 'Batmobilebale.jpeg',
             'film' => '3',
             'description' => "The batmobile is a sleek, black vehicle that combines speed and stealth, making it the ultimate crime-fighting machine. It has all the bells and whistles you would expect from a superhero's ride, including bat-shaped headlights, bat-shaped tail fins, and even a bat-shaped steering wheel (because why not?)."
         ],
@@ -122,7 +122,7 @@ class VehicleFixtures extends Fixture implements DependentFixtureInterface
             'airConditioning' => 'false',
             'title' => 'Bumblebee',
             'license' => 'B',
-            'picture' => 'bumblebleVoiture.jpeg',
+            'picture' => 'bumblebeVoiture.jpeg',
             'film' => '5',
             'description' => "Bumblebee is a Camaro that packs a punch, both in terms of looks and performance. This car is a true transformer, it goes from a regular looking Camaro to a fierce robot with the touch of a button."
         ],
@@ -141,7 +141,7 @@ class VehicleFixtures extends Fixture implements DependentFixtureInterface
             'airConditioning' => 'false',
             'title' => 'GostBusters',
             'license' => 'B',
-            'picture' => 'voiture-gostbusters.jpg',
+            'picture' => 'gostbusters2.jpg',
             'film' => '16',
             'description' => "The Ghostbusters car, or Ecto-1, is the ultimate ghost-hunting machine. With its iconic roof-mounted siren, it's sure to get you noticed as you race to save the city from ectoplasmic threats."
         ],
@@ -217,7 +217,7 @@ class VehicleFixtures extends Fixture implements DependentFixtureInterface
             'airConditioning' => 'false',
             'title' => 'Mad Max 2 car',
             'license' => 'None',
-            'picture' => 'mad_max2.webp',
+            'picture' => 'Fury_Road_Doof_Wagon.webp',
             'film' => '10',
             'description' => "Mad Max's car, the 'Interceptor', is a post-apocalyptic road warrior's dream machine. It's got a variety of modifications such as reinforced roll cage, mounted machine guns, and front-mounted spikes, which will come in handy when you're trying to fend off marauders and warlords."
         ],
@@ -255,7 +255,7 @@ class VehicleFixtures extends Fixture implements DependentFixtureInterface
             'airConditioning' => 'False',
             'title' => 'Noddy car',
             'license' => 'B',
-            'picture' => 'Oui-oui.jpg',
+            'picture' => 'Oui-Oui.jpg',
             'film' => '12',
             'description' => "Noddy's car is a small, whimsical vehicle that's perfect for exploring the magical world of Toyland. With its round shape, cheerful design and Noddy's face on the front, it's sure to put a smile on your face."
         ],
