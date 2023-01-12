@@ -283,3 +283,20 @@ p {
     text-align: left !important;
     list-style-type: none;
 }
+
+.editVehicle {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background-color: $mainYellow;
+    border-radius: 100%;
+    padding-top: 12px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.editVehicleText {
+    color: $black;
+    text-decoration: none;
+    font: 800 20px Barlow Semi Condensed;
+}

@@ -6,8 +6,7 @@
 {% block body %}
 
 
-	<h1 class="homeTitle text-center m-5">Vehicle</h1>
-
+	<main class="mainIndex">
 
 		<h1 class="indexTitle">OUR MOVIE VEHICLES FLEET</h1>
 
@@ -36,11 +35,24 @@
 		<div class="container text-center">
 			<div class="row">
 
+				{% if is_granted('ROLE_CONTRIBUTOR') %}
+					<a href="{{ path('app_vehicle_new') }}">
+						<button class="btnCineCar">
+							CREATE NEW</button>
+					</a>
+				{% endif %}
 
 				{% for vehicle in vehicles %}
 
 					<div class="col-xl-3 col-lg-4 col-md-6 col-sm-8">
 						<div class="card mb-5 cineCard" style="width: 18rem;">
+
+							{% if is_granted('ROLE_CONTRIBUTOR') %}
+								<div class="editVehicle">
+									<a class="editVehicleText" href="{{ path('app_vehicle_edit', {'id': vehicle.id}) }}">EDIT</a>
+								</div>
+							{% endif %}
+
 							<img src="{{asset('build/images/' ~ vehicle.picture)}}" class="card-img-top rounded-0" alt="...">
 							<div class="card-body">
 								<h4 class="card-title h4CineCar">{{ vehicle.title }}</h4>
@@ -62,10 +74,6 @@
 			</div>
 		</div>
 	</div>
-	<a href="{{ path('app_vehicle_new') }}">Create new</a>
 
 
-		
-
-
-{% endblock %}
+</main>{% endblock %}
