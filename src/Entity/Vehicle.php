@@ -73,6 +73,9 @@ class Vehicle
     #[ORM\ManyToMany(targetEntity: User::class, mappedBy: 'vehicle')]
     private Collection $users;
 
+    #[ORM\Column(length: 255, nullable: true)]
+    private ?string $quote = null;
+
     public function __construct()
     {
         $this->comments = new ArrayCollection();
@@ -341,6 +344,18 @@ class Vehicle
         if ($this->users->removeElement($user)) {
             $user->removeVehicle($this);
         }
+
+        return $this;
+    }
+
+    public function getQuote(): ?string
+    {
+        return $this->quote;
+    }
+
+    public function setQuote(?string $quote): self
+    {
+        $this->quote = $quote;
 
         return $this;
     }
