@@ -374,7 +374,7 @@ class VehicleFixtures extends Fixture implements DependentFixtureInterface
             $vehicle->setLicense($value['license']);
             $vehicle->setPicture($value['picture']);
             $vehicle->setDescription($value['description']);
-            $vehicle->setFilm($this->getReference('movie_' . $value['film']));
+            $vehicle->setMovie($this->getReference('movie_' . $value['film']));
             $vehicle->setQuote($value['quote']);
 
             $manager->persist($vehicle);
