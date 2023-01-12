@@ -58,22 +58,28 @@
 								<h4 class="card-title h4CineCar">{{ vehicle.title }}</h4>
 								<p class="card-text">{{ vehicle.movie.title }}:
 									{{ vehicle.movie.year }}</p>
-								<a href="{{ path('app_vehicle_show', {'id': vehicle.id}) }}">
-									<button class="btnCardCineCar">
-										SELECT</button>
-								</a>
+								<p class="{% if vehicle.availability == false %} text-danger {% else %} text-success {% endif %}mb-0">●
+									{% if vehicle.availability %}
+										Available !
+									{% else %}
+										Not Available !
+									{% endif %}
+								</p>
 
-							</div>
+							</p>
+							<a href="{{ path('app_vehicle_show', {'id': vehicle.id}) }}">
+								<button class="btnCardCineCar">
+									SELECT</button>
+							</a>
+
 						</div>
 					</div>
+				</div>
 
-				{% else %}
+			{% else %}
 
-					<td colspan="18">no records found</td>
-				{% endfor %}
-			</div>
+				<td colspan="18">no records found</td>
+			{% endfor %}
 		</div>
 	</div>
-
-
-</main>{% endblock %}
+</div></main>{% endblock %}
