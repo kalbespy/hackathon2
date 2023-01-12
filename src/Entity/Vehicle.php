@@ -291,6 +291,18 @@ class Vehicle
         return $this;
     }
 
+    public function getFilm(): ?string
+    {
+        return (string) $this->film;
+    }
+
+    public function setFilm(?Movie $film): self
+    {
+        $this->film = $film;
+
+        return $this;
+    }
+
     /**
      * @return Collection<int, Comment>
      */
