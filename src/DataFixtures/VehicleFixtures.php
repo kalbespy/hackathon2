@@ -28,6 +28,7 @@ class VehicleFixtures extends Fixture implements DependentFixtureInterface
             'license' => 'B',
             'picture' => '4-Ford-Gran-torino-Starsky-Hutch.jpg',
             'film' => '0',
+            'quote' => 'I think I\m going to have to redo the whole look. I\ve become too predictable. Starsky',
             'description' => "The Ford Torino is a classic muscle car that will make you feel like you're in a 70s cop show, chasing down criminals on the streets. With its bold design, it's sure to turn heads as you cruise around town. And with its powerful V8 engine, it's got enough muscle to outrun just about anyone, except maybe the cops."
         ],
         [
@@ -47,6 +48,7 @@ class VehicleFixtures extends Fixture implements DependentFixtureInterface
             'license' => 'B',
             'picture' => 'agenceTousRisque.jpeg',
             'film' => '1',
+            'quote' => 'We are here to save the world, not to tell it how it should be saved. Hannibal',
             'description' => "The A-Team van is the ultimate crime-fighting vehicle, equipped with everything you need to take down bad guys and make a quick getaway. It's got a bold black and red color scheme, complete with a custom 'A-Team' logo painted on the side."
         ],
         [
@@ -66,6 +68,7 @@ class VehicleFixtures extends Fixture implements DependentFixtureInterface
             'license' => 'BatLicense',
             'picture' => 'batmobile-batman-forever-4905-2.jpg',
             'film' => '2',
+            'quote' => 'I am the Dark Knight, I am Batman. The Batman',
             'description' => "The Batmobile is like a sports car with a superhero complex. It's got all the fancy gadgets, the sleek design, and the horsepower to outrun the police, but it's just dying to be seen flying through the streets of Gotham, with Batman and Robin in tow, pretending to be just an ordinary car."
 
         ],
@@ -86,6 +89,7 @@ class VehicleFixtures extends Fixture implements DependentFixtureInterface
             'license' => 'BatLicense',
             'picture' => 'batmobilebale.jpeg',
             'film' => '3',
+            'quote' => 'There is no respite, no forgiveness, no end. There is only hatred. And I am his master. The Joker',
             'description' => "The batmobile is a sleek, black vehicle that combines speed and stealth, making it the ultimate crime-fighting machine. It has all the bells and whistles you would expect from a superhero's ride, including bat-shaped headlights, bat-shaped tail fins, and even a bat-shaped steering wheel (because why not?)."
         ],
         [
@@ -105,6 +109,7 @@ class VehicleFixtures extends Fixture implements DependentFixtureInterface
             'license' => 'B',
             'picture' => 'coccinelle.jpg',
             'film' => '1',
+            'quote' => 'One thing I taught you is that everyone needs a little love." Herbie',
             'description' => "Herbie is a car with a personality as big as its chrome bumper. This VW Beetle is not your average vehicle. It has a mind of its own and a will to win, making it the ultimate underdog in any race."
         ],
         [
@@ -124,6 +129,7 @@ class VehicleFixtures extends Fixture implements DependentFixtureInterface
             'license' => 'B',
             'picture' => 'bumblebleVoiture.jpeg',
             'film' => '5',
+            'quote' => '',
             'description' => "Bumblebee is a Camaro that packs a punch, both in terms of looks and performance. This car is a true transformer, it goes from a regular looking Camaro to a fierce robot with the touch of a button."
         ],
         [
@@ -143,6 +149,7 @@ class VehicleFixtures extends Fixture implements DependentFixtureInterface
             'license' => 'B',
             'picture' => 'voiture-gostbusters.jpg',
             'film' => '16',
+            'quote' => '',
             'description' => "The Ghostbusters car, or Ecto-1, is the ultimate ghost-hunting machine. With its iconic roof-mounted siren, it's sure to get you noticed as you race to save the city from ectoplasmic threats."
         ],
         [
@@ -162,6 +169,7 @@ class VehicleFixtures extends Fixture implements DependentFixtureInterface
             'license' => 'B',
             'picture' => 'jamesBond.jpeg',
             'film' => '7',
+            'quote' => '',
             'description' => "James Bond's Aston Martin is the ultimate spy car. It's got everything a secret agent could want: a sleek design, powerful engine, and more gadgets than Q Branch. All in all, this is a car that will make you feel like a true spy, just remember to bring your passport, in case you need to make a quick escape to exotic location."
         ],
         [
@@ -181,6 +189,7 @@ class VehicleFixtures extends Fixture implements DependentFixtureInterface
             'license' => 'B',
             'picture' => 'k2000.jpg',
             'film' => '8',
+            'quote' => '',
             'description' => "KITT, from the classic 80s show Knight Rider, is the ultimate high-tech car. It has a habit of giving out sarcastic comebacks and making jokes, making your ride not only safe but also entertaining."
         ],
         [
@@ -200,6 +209,7 @@ class VehicleFixtures extends Fixture implements DependentFixtureInterface
             'license' => 'None',
             'picture' => 'mad_max_voiture.webp',
             'film' => '9',
+            'quote' => 'I am the one who flees both the living and the dead. Stalked by scavengers, haunted by those I couldn\t protect. I am the warrior who fights for the survival of the tribe. Furiosa',
             'description' => "The cars from Mad Max Fury Road are like rolling fortresses, decked out with spikes, armor, and enough fire-breathing exhaust pipes to make any dystopian warlord jealous. They are a wild and colorful bunch, each one more intimidating and dangerous than the last, and are sure to make a statement whether they are racing across the wasteland or causing chaos on the Fury Road."
         ],
         [
@@ -219,6 +229,7 @@ class VehicleFixtures extends Fixture implements DependentFixtureInterface
             'license' => 'None',
             'picture' => 'mad_max2.webp',
             'film' => '10',
+            'quote' => '',
             'description' => "Mad Max's car, the 'Interceptor', is a post-apocalyptic road warrior's dream machine. It's got a variety of modifications such as reinforced roll cage, mounted machine guns, and front-mounted spikes, which will come in handy when you're trying to fend off marauders and warlords."
         ],
         [
@@ -238,6 +249,7 @@ class VehicleFixtures extends Fixture implements DependentFixtureInterface
             'license' => 'B',
             'picture' => 'MisteryMachine.jpeg',
             'film' => '11',
+            'quote' => '',
             'description' => "The Mystery Machine, from the classic cartoon Scooby-Doo, is the ultimate mystery-solving vehicle. With a powerful engine, it can take you to any location, be it an old mansion, a spooky theme park, or even an abandoned mine, in search of ghosts, ghouls, and other supernatural phenomena."
         ],
         [
@@ -257,6 +269,7 @@ class VehicleFixtures extends Fixture implements DependentFixtureInterface
             'license' => 'B',
             'picture' => 'Oui-oui.jpg',
             'film' => '12',
+            'quote' => '',
             'description' => "Noddy's car is a small, whimsical vehicle that's perfect for exploring the magical world of Toyland. With its round shape, cheerful design and Noddy's face on the front, it's sure to put a smile on your face."
         ],
         [
@@ -276,6 +289,7 @@ class VehicleFixtures extends Fixture implements DependentFixtureInterface
             'license' => 'B',
             'picture' => 'pikachu.webp',
             'film' => '13',
+            'quote' => '',
             'description' => "Pikachu's mobile is a car that's just as electric and energetic as the Pokémon himself. It's powered by Pikachu's electricity, so it never needs to be charged."
         ],
         [
@@ -295,6 +309,7 @@ class VehicleFixtures extends Fixture implements DependentFixtureInterface
             'license' => 'BatLicense',
             'picture' => 'premiereBatmobile.jpeg',
             'film' => '4',
+            'quote' => '',
             'description' => "The Batmobile is like a sports car on steroids, but with more bat symbols. It's got everything: bat-shaped headlights, bat-shaped tail fins, bat-shaped cup holders (for those emergency bat-signal latte situations). It's also got an ejector seat, in case Batman needs to make a quick bat-escape. And let's not forget the bat-computer, which is basically just like a regular computer, but with more batman emojis."
         ],
         [
@@ -314,6 +329,7 @@ class VehicleFixtures extends Fixture implements DependentFixtureInterface
             'license' => 'Z',
             'picture' => 'retour vers le future.jpg',
             'film' => '14',
+            'quote' => '',
             'description' => "The Delorean from Back to the Future is a time-traveling machine that's guaranteed to make you feel like a true time traveler. With its stainless-steel body, it's got more than enough 'flux' to take you on a journey through time, whether it's to the past or the future, as long as you have enough 'plutonium' and remember to set the time circuits correctly."
         ],
         [
@@ -333,6 +349,7 @@ class VehicleFixtures extends Fixture implements DependentFixtureInterface
             'license' => 'Who cares, you are going to lose it anyway...',
             'picture' => 'taxi.jpeg',
             'film' => '15',
+            'quote' => '',
             'description' => "The car from the Taxi movies, is a modified Checker cab that is built to handle the wildest of chases and craziest of stunts. It's got a bulletproof body, a powerful engine and a suspension system that can handle all the jumps, spins and donuts that taxi driver Jimmy Fallon can throw at it."
         ],
     ];
@@ -358,6 +375,7 @@ class VehicleFixtures extends Fixture implements DependentFixtureInterface
             $vehicle->setPicture($value['picture']);
             $vehicle->setDescription($value['description']);
             $vehicle->setFilm($this->getReference('movie_' . $value['film']));
+            $vehicle->setQuote($value['quote']);
 
             $manager->persist($vehicle);
             $this->addReference('vehicle_' . $key, $vehicle);
