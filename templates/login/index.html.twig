@@ -6,7 +6,9 @@
 {% block body %}
 
 	<main class="mainForm d-flex justify-content-center">
+
 		<div class="formBG">
+
 			<form action="{{ path('app_login') }}" method="post">
 
 				<div class="form-group divForm">
@@ -29,7 +31,11 @@
 				{% endif %}
 
 			</form>
-			<a href="/register"><button class="btnCineCar">REGISTER</button></a>
+
+			<a href="/register" class="text-decoration-none">
+				<p class="text-white mt-4">You don't have an account ? Register</p>
+			</a>
+
 		</div>
 	</main>
 {% endblock %}
