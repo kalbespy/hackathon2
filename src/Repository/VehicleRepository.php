@@ -50,6 +50,16 @@ class VehicleRepository extends ServiceEntityRepository
     }
 
 
+    public function findLikeMovie(string $movie): array
+    {
+        $queryBuilder = $this->createQueryBuilder('v')
+            ->where('v.film LIKE :name')
+            ->setParameter('name', '%' . $movie . '%')
+            ->orderBy('v.title', 'ASC')
+            ->getQuery();
+        return $queryBuilder->getResult();
+    }
+
     //    /**
     //     * @return Vehicle[] Returns an array of Vehicle objects
     //     */
