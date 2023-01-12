@@ -1,19 +1,39 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Register{% endblock %}
+{% block title %}Register
+{% endblock %}
 
 {% block body %}
-    <h1>Register</h1>
 
-    {{ form_start(registrationForm) }}
-        {{ form_row(registrationForm.name) }}
-        {{ form_row(registrationForm.lastname) }}
-        {{ form_row(registrationForm.email) }}
-        {{ form_row(registrationForm.plainPassword, {
+<h1 class="text-center m-2">Register</h1>
+	<main class="mainForm d-flex justify-content-center">
+		<div class="formBG">
+			<form action="{{ path('app_register') }}" method="post">
+
+				{{ form_start(registrationForm) }}
+				<div class="form-group">
+					<label for="username" class="textFormLabel">
+						{{ form_row(registrationForm.firstname) }}</label>
+				</div>
+				<div class="form-group">
+					<label for="username" class="textFormLabel">
+						{{ form_row(registrationForm.lastname) }}</label>
+				</div>
+				<div class="form-group">
+					<label for="email" class="textFormLabel">
+						{{ form_row(registrationForm.email) }}</label>
+				</div>
+				<div class="form-group">
+					<label for="email" class="textFormLabel">{{ form_row(registrationForm.plainPassword, {
             label: 'Password'
-        }) }}
-        {{ form_row(registrationForm.agreeTerms) }}
+                        }) }}</label>
+				</div>
 
-        <button type="submit" class="btn">Register</button>
-    {{ form_end(registrationForm) }}
+				<div class="textFormLabel">{{ form_row(registrationForm.agreeTerms) }}</div>
+
+				<button type="submit" class="btnCineCar">Register</button>
+				{{ form_end(registrationForm) }}
+			</form>
+		</div>
+	</main>
 {% endblock %}

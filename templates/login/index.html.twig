@@ -23,11 +23,13 @@
 
 				<button type="submit" class="btnCineCar">LOGIN</button>
 
+
 				{% if error %}
 					<div class="textFormLabel">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
 				{% endif %}
 
 			</form>
+			<a href="/register"><button class="btnCineCar">REGISTER</button></a>
 		</div>
 	</main>
 {% endblock %}
