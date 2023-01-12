@@ -1,4 +1,4 @@
-main {
+.mainHome {
     background-color: $black;
     background-image: url(../../assets/posters/BG_Home.png);
     background-position: 50% 50%;
@@ -139,6 +139,8 @@ p {
     margin-bottom: 100px;
 }
 
+
+
 .searchBar {
     font: 300 20px Barlow Semi Condensed;
     width: 50%;
@@ -197,4 +199,60 @@ p {
     color: #000 !important;
     text-align: center;
     padding-top: 25px;
+}
+
+.mainShow {
+    display: flex;
+    justify-content: center;
+}
+
+.showVehicle {
+    width: 1250px;
+    display: flex;
+}
+
+.imageShow {
+    width: 40%;
+    margin-right: 50px;
+}
+
+.infoShow {
+    width: 55%;
+    padding-bottom: 50px;
+}
+
+.showbg {
+    background-color: $black;
+}
+
+.bodyShow {
+    background-color: $black;
+
+}
+
+.h2showPage {
+    font: 600 72px Barlow Semi Condensed;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    width: 100%;
+}
+
+.h2Cineshow {
+    color: $mainYellow;
+    font: 600 42px Barlow Semi Condensed;
+    text-align: left;
+    margin-bottom: 30px;
+
+}
+
+.ulShow1 {
+    text-align: left !important;
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+.ulShow2 {
+    text-align: left !important;
+    list-style-type: none;
 }
