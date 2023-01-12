@@ -291,7 +291,6 @@ class Vehicle
         return $this;
     }
 
-
     public function getFilm(): ?Movie
     {
         return $this->film;
