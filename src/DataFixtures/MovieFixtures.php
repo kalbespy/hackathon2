@@ -14,7 +14,7 @@ class MovieFixtures extends Fixture
             'year' => "1975",
         ],
         [
-            'title' => "L'Agence tous risques ",
+            'title' => "The A-Team",
             'year' => "1983",
         ],
         [
@@ -63,7 +63,7 @@ class MovieFixtures extends Fixture
         ],
         [
             'title' => "Pokémon",
-            'year' => "1998",13
+            'year' => "1998", 13
         ],
         [
             'title' => "Back to the Future",
@@ -74,11 +74,11 @@ class MovieFixtures extends Fixture
             'year' => "1998",
         ],
         [
-            'title' => "SOS Fantômes",
+            'title' => "Ghostbusters",
             'year' => "1984",
         ],
     ];
-    
+
     public function load(ObjectManager $manager): void
     {
         foreach (self::MOVIES as $key => $value) {
@@ -88,6 +88,6 @@ class MovieFixtures extends Fixture
             $manager->persist($movie);
             $this->addReference('movie_' . $key, $movie);
         }
-    $manager->flush();
+        $manager->flush();
     }
 }
