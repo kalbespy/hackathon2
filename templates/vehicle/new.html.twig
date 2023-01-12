@@ -1,11 +1,15 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}New Vehicle{% endblock %}
+{% block title %}New Vehicle
+{% endblock %}
 
 {% block body %}
-    <h1>Create new Vehicle</h1>
+	<main class='mainIndex text-white '>
+		<h1 class="h2showPage">Create a new Vehicle</h1>
 
-    {{ include('vehicle/_form.html.twig') }}
-
-    <a href="{{ path('app_vehicle_index') }}">back to list</a>
+		{{ include('vehicle/_form.html.twig') }}
+		<div class="w-100 text-center">
+			<a href="{{ path('app_vehicle_index') }}" class="text-center">back to list</a>
+		</div>
+	</main>
 {% endblock %}
