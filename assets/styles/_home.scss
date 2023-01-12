@@ -101,9 +101,28 @@ p {
 }
 
 .searchBar {
-    width: 60%;
+    font: 300 20px Barlow Semi Condensed;
+    width: 50%;
     margin-left: 10%;
-    padding-top: 10%;
+    background-color: $black;
+    color: #ffffff;
+}
+
+.searchBtn {
+    width: 150px;
+    height: 40px;
+    color: $black;
+    background-color: $mainYellow;
+    font: 600 20px Barlow Semi Condensed;
+    text-align: center;
+    margin-top: 31px;
+
+    &:hover {
+        background-color: $black;
+        border-width: 2px;
+        border-color: $mainYellow;
+        color: $mainYellow;
+    }
 }
 
 .starCritics {

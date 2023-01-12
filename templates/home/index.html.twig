@@ -11,19 +11,23 @@
 			<h1 class="homeTitle">
 				DRIVE INTO<br>THE SPOTLIGHT
 			</h1>
-			<div class="text-bg-dark searchBar">
-				<h2>Find a vehicle</h2>
-				<form action="{{ path('app_vehicle_index') }}" method="post" class="">
-					<div class="form-row d-flex p-2">
-						<div class="form-group col-md-3">
-							<label for="inputSearch">Select a vehicle</label>
-							<input type="text" name="searchCar" class="form-control" placeholder="ex: KITT">
+			<div class="searchBar mt-5 p-4">
+				<h2>FIND A VEHICLE</h2>
+				<form action="{{ path('app_vehicle_index') }}" method="post">
+					<div class="form-row d-flex">
+						<div class="form-group col-md-4 me-2">
+							<label for="inputSearch" class="mb-2">
+								<em class="mb-5">Find a Vehicle</em>
+							</label>
+							<input type="text" name="searchCar" class="form-control searchInput rounded-0" placeholder="ex: KITT">
 						</div>
-						<div class="form-group col-md-3">
-							<label for="inputSearch">or a Movie</label>
-							<input type="text" name="searchMovie" class="form-control" placeholder="ex: K2000">
+						<div class="form-group col-md-4 ms-2 me-2">
+							<label for="inputSearch" class="mb-2">
+								<em>or a Movie</em>
+							</label>
+							<input type="text" name="searchMovie" class="form-control searchInput rounded-0" placeholder="ex: K2000">
 						</div>
-						<button type="submit" class="">Select</button>
+						<button type="submit" class="searchBtn ms-2">SEARCH</button>
 					</div>
 				</form>
 			</div>

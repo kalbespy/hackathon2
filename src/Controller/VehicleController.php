@@ -17,9 +17,15 @@ class VehicleController extends AbstractController
     public function index(Request $request, VehicleRepository $vehicleRepository): Response
     {
         if ($request->isMethod('POST')) {
-            $search = $request->get('search');
+            $searchCar = $request->get('searchCar');
+            $searchMovie = $request->get('searchMovie');
 
-            $vehicles = $vehicleRepository->findLikeName($search);
+            if ($searchCar) {
+                $vehicles = $vehicleRepository->findLikeName($searchCar);
+            }
+            if ($searchMovie) {
+                $vehicles = $vehicleRepository->findLikeMovie($searchMovie);
+            }
         } else {
             $vehicles = $vehicleRepository->findAll();
         }
