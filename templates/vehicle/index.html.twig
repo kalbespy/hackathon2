@@ -5,7 +5,9 @@
 
 {% block body %}
 
-	<main class="mainIndex">
+
+	<h1 class="homeTitle text-center m-5">Vehicle</h1>
+
 
 		<h1 class="indexTitle">OUR MOVIE VEHICLES FLEET</h1>
 
@@ -59,8 +61,11 @@
 				{% endfor %}
 			</div>
 		</div>
+	</div>
+	<a href="{{ path('app_vehicle_new') }}">Create new</a>
 
-		<a href="{{ path('app_vehicle_new') }}">Create new</a>
 
-	</main>
+		
+
+
 {% endblock %}

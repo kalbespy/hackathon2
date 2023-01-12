@@ -22,6 +22,7 @@
 				<input type="hidden" name="{{ path('app_home') }}" value="/">
 
 				<button type="submit" class="btnCineCar">LOGIN</button>
+				<a href="/register" class="">REGISTER</a>
 
 				{% if error %}
 					<div class="textFormLabel">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
