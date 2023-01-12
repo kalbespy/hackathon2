@@ -6,6 +6,33 @@ main {
     background-size: cover;
 }
 
+.mainForm {
+    height: 500px;
+}
+
+.formBG {
+    margin-top: 100px;
+    height: 600px;
+    border-width: 5px;
+    border-color: $black;
+}
+
+.textForm {
+    color: #000;
+    font: 400 20px Barlow Semi Condensed;
+    width: 350px;
+}
+
+.textFormLabel {
+    margin-top: 15px;
+    color: #fff;
+    font: 400 20px Barlow Semi Condensed;
+}
+
+.divForm {
+    width: 350px;
+}
+
 .headerCineCar {
     background-image: url(../../assets/posters/HomeBanner.jpg);
     height: 500px;
@@ -17,7 +44,8 @@ main {
 
 .homeTitle {
     color: #000;
-    font: 700 60px Barlow Semi Condensed;
+    font: 800 80px Barlow Semi Condensed;
+    line-height: 0.8;
     margin-left: 10%;
     padding-top: 10%;
 }
@@ -35,6 +63,15 @@ main {
     font: 600 26px Barlow Semi Condensed;
 }
 
+.textMenu {
+    color: #000 !important;
+    font: 600 20px Barlow Semi Condensed;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
 p {
     font: 500 18px Barlow Semi Condensed;
 }
@@ -45,6 +82,7 @@ p {
 
 .cineCard {
     border-radius: 0;
+    border-width: 0;
     background-color: $mainYellow;
     width: 500px;
     margin-left: 20px;
@@ -98,6 +136,7 @@ p {
     width: 280px;
     margin: 15px;
     padding: 20px;
+    margin-bottom: 100px;
 }
 
 .searchBar {
@@ -140,4 +179,22 @@ p {
 
 .logoHome {
     margin: 20px;
+}
+
+.logoFooter {
+    width: 250px;
+    height: auto;
+}
+
+.footerNav {
+    padding-top: 100px;
+    background-color: $mainYellow;
+    padding: 20px;
+}
+
+.textFooter {
+    font: 600 20px Barlow Semi Condensed;
+    color: #000 !important;
+    text-align: center;
+    padding-top: 25px;
 }
