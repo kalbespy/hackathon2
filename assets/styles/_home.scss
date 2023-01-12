@@ -1,4 +1,4 @@
-main {
+.mainHome {
     background-color: $black;
     background-image: url(../../assets/posters/BG_Home.png);
     background-position: 50% 50%;
@@ -6,8 +6,20 @@ main {
     background-size: cover;
 }
 
+.mainIndex {
+    background-color: $black;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .mainForm {
     height: 500px;
+    background-color: $black;
+    background-image: url(../../assets/posters/BG_Home.png);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .formBG {
@@ -43,11 +55,18 @@ main {
 }
 
 .homeTitle {
-    color: #000;
+    color: $black;
     font: 800 80px Barlow Semi Condensed;
-    line-height: 0.8;
+    line-height: 0.8 !important;
+    padding-top: 5% !important;
     margin-left: 10%;
-    padding-top: 5%;
+}
+
+.indexTitle {
+    color: $white;
+    font: 800 80px Barlow Semi Condensed;
+    padding-top: 50px;
+    text-align: center;
 }
 
 .h2CineCar {
@@ -88,6 +107,7 @@ p {
     margin-left: 20px;
     margin-right: 20px;
     margin-top: 20px;
+    height: 450px !important;
 
     &:hover {
         box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.25);
@@ -138,6 +158,8 @@ p {
     padding: 20px;
     margin-bottom: 100px;
 }
+
+
 
 .searchBar {
     font: 300 20px Barlow Semi Condensed;
@@ -197,4 +219,67 @@ p {
     color: #000 !important;
     text-align: center;
     padding-top: 25px;
+}
+
+.formSearchIndex {
+    font: 300 20px Barlow Semi Condensed;
+    background-color: $black;
+    color: #ffffff;
+    margin-top: -50px;
+}
+
+.mainShow {
+    display: flex;
+    justify-content: center;
+}
+
+.showVehicle {
+    width: 1250px;
+    display: flex;
+}
+
+.imageShow {
+    width: 40%;
+    margin-right: 50px;
+}
+
+.infoShow {
+    width: 55%;
+    padding-bottom: 50px;
+}
+
+.showbg {
+    background-color: $black;
+}
+
+.bodyShow {
+    background-color: $black;
+
+}
+
+.h2showPage {
+    font: 600 72px Barlow Semi Condensed;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    width: 100%;
+}
+
+.h2Cineshow {
+    color: $mainYellow;
+    font: 600 42px Barlow Semi Condensed;
+    text-align: left;
+    margin-bottom: 30px;
+
+}
+
+.ulShow1 {
+    text-align: left !important;
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+.ulShow2 {
+    text-align: left !important;
+    list-style-type: none;
 }

@@ -1,64 +1,92 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}
-	Vehicle
-{% endblock %}
+{% block title %}{% endblock %}
 
 {% block body %}
-	<h1 class="text-center m-5">Vehicle</h1>
 
-	<div class="showVehicle d-flex w">
-		<div class="w-75" style="background-image: url( {{vehicle.picture}})"></div>
-		<div>
-			<h2 class="h2CineCar">Description</h2>
-			<p>{{ vehicle.description }}</p>
+	<div class="bodyShow text-white text-center">
+		<h1 class="h2showPage">{{ vehicle.title }}
+		</h1>
 
-			<h2 class="h2CineCar">Your vehicle</h2>
-			<ul>
-				<li>Mileage:
-					{{ vehicle.mileage }}
-				</li>
-				<li>Fuel:
-					{{ vehicle.fuel }}
-				</li>
-				<li>Category:
-					{{ vehicle.category }}
-				</li>
-				<li>General condition :
-					{{ vehicle.generalCondition }}
-				</li>
-				<li>Transmition:
-					{{ vehicle.transmition }}
-				</li>
-				<li>Nb Place:
-					{{ vehicle.mileage }}
-				</li>
-				<li>Availability:
-					{{ vehicle.availability }}
-				</li>
-				<li>Location:
-					{{ vehicle.location }}
-				</li>
-				<li>Consumption:
-					{{ vehicle.consumption }}
-				</li>
-				<li>Emissions:
-					{{ vehicle.emissions }}
-				</li>
-				<li>Gps:
-					{{ vehicle.gps }}
-				</li>
-				<li>Air Conditioning:
-					{{ vehicle.airConditioning }}
-				</li>
-				<li>Title:
-					{{ vehicle.title }}
-				</li>
-				<li>Licence:
-					{{ vehicle.license }}
-				</li>
-			</ul>
-		</div>
+
+		<main class="mainShow showbg">
+			<div class="showVehicle">
+				<div class="imageShow showbg">
+					<img src="{{asset('build/images/' ~ vehicle.picture)}}" class="card-img-top " alt="...">
+				</div>
+				<div class="infoShow showbg">
+					<h2 class="h2Cineshow ">Description</h2>
+					<p class="text-white ulShow1">{{ vehicle.description }}</p>
+
+					<h2 class="h2Cineshow showbg">Your vehicle</h2>
+					<div class="d-flex">
+						<ul class="text-white ulShow1">
+							<li>
+								<strong>Mileage:</strong>:
+								{{ vehicle.mileage }}
+							</li>
+							<li>
+								<strong>Fuel:</strong>
+								{{ vehicle.fuel }}
+							</li>
+							<li>
+								<strong>Category:</strong>
+								{{ vehicle.category }}
+							</li>
+							<li>
+								<strong>General Condition :</strong>
+								{{ vehicle.generalCondition }}
+							</li>
+							<li>
+								<strong>Transmition:</strong>
+								{{ vehicle.transmition }}
+							</li>
+							<li>
+								<strong>Nb Place:</strong>
+								{{ vehicle.mileage }}
+							</li>
+							<li>
+								<strong>Availability:</strong>
+								{{ vehicle.availability }}
+							</li>
+						</ul>
+						<ul class="text-white ulShow2">
+							<li>
+								<strong>Location:</strong>
+								{{ vehicle.location }}
+							</li>
+							<li>
+								<strong>Consumption:</strong>
+								{{ vehicle.consumption }}
+								l/100km
+							</li>
+							<li>
+								<strong>Emissions:</strong>
+								{{ vehicle.emissions }}g CO2/km
+							</li>
+							<li>
+								<strong>Gps:</strong>
+								{{ vehicle.gps }}
+							</li>
+							<li>
+								<strong>Air Conditioning:</strong>
+								{{ vehicle.airConditioning }}
+							</li>
+							<li>
+								<strong>Title:</strong>
+								{{ vehicle.title }}
+							</li>
+							<li>
+								<strong>Licence</strong>
+								{{ vehicle.license }}
+							</li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+		</main>
+		<button class="btnCardCineCar mb-5">
+			SELECT</button>
 	</div>
-
 {% endblock %}
