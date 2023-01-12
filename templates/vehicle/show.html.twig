@@ -8,6 +8,11 @@
 		<h1 class="h2showPage">{{ vehicle.title }}
 		</h1>
 
+		{% if vehicle.quote %}
+			<h2 class="mb-5 fst-italic fw-normal">
+				"{{ vehicle.quote }}"
+			</h2>
+		{% endif %}
 		<main class="mainShow showbg">
 			<div class="showVehicle">
 				<div class="imageShow showbg">
@@ -21,54 +26,58 @@
 					<div class="d-flex">
 						<ul class="text-white ulShow1">
 							<li>
-								<strong>Mileage:</strong>:
-								{{ vehicle.mileage }}
+								<strong>Title:
+								</strong>
+								{{ vehicle.title }}
 							</li>
 							<li>
-								<strong>Fuel:</strong>
-								{{ vehicle.fuel }}
-							</li>
-							<li>
-								<strong>Category:</strong>
-								{{ vehicle.category }}
-							</li>
-							<li>
-								<strong>General Condition :</strong>
-								{{ vehicle.generalCondition }}
-							</li>
-							<li>
-								<strong>Transmition:</strong>
-								{{ vehicle.transmition }}
-							</li>
-							<li>
-								<strong>Nb Place:</strong>
-								{{ vehicle.mileage }}
-							</li>
-							<li>
-								<strong>Availability:</strong>
-								{% if vehicle.availability %}
-									Available
-								{% else %}
-									Not Available
-								{% endif %}
-							</li>
-						</ul>
-						<ul class="text-white ulShow2">
-							<li>
-								<strong>Location:</strong>
+								<strong>Location:
+								</strong>
 								{{ vehicle.location }}
 							</li>
 							<li>
-								<strong>Consumption:</strong>
+								<strong>Category:
+								</strong>
+								{{ vehicle.category }}
+							</li>
+							<li>
+								<strong>Nb Place:
+								</strong>
+								{{ vehicle.nbPlace }}
+							</li>
+							<li>
+								<strong>Mileage:
+								</strong>
+								{{ vehicle.mileage }}
+							</li>
+							<li>
+								<strong>Fuel:
+								</strong>
+								{{ vehicle.fuel }}
+							</li>
+
+							<li>
+								<strong>General Condition:
+								</strong>
+								{{ vehicle.generalCondition }}
+							</li>
+						</ul>
+						<ul class="text-white ulShow2">
+
+							<li>
+								<strong>Consumption:
+								</strong>
 								{{ vehicle.consumption }}
 								l/100km
 							</li>
 							<li>
-								<strong>Emissions:</strong>
+								<strong>Emissions:
+								</strong>
 								{{ vehicle.emissions }}g CO2/km
 							</li>
 							<li>
-								<strong>Gps:</strong>
+								<strong>GPS:
+								</strong>
 								{% if vehicle.gps %}
 									Yes
 								{% else %}
@@ -76,20 +85,33 @@
 								{% endif %}
 							</li>
 							<li>
-								<strong>Air Conditioning:</strong>
+								<strong>Air Conditioning:
+								</strong>
 								{% if vehicle.airConditioning %}
 									Yes
 								{% else %}
 									No
 								{% endif %}
 							</li>
+
 							<li>
-								<strong>Title:</strong>
-								{{ vehicle.title }}
+								<strong>License:
+								</strong>
+								{{ vehicle.license }}
 							</li>
 							<li>
-								<strong>Licence</strong>
-								{{ vehicle.license }}
+								<strong>Transmition:
+								</strong>
+								{{ vehicle.transmition }}
+							</li>
+							<li>
+								<strong>Availability:
+								</strong>
+								{% if vehicle.availability %}
+									Available
+								{% else %}
+									Not Available
+								{% endif %}
 							</li>
 						</ul>
 					</div>

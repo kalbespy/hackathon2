@@ -50,7 +50,7 @@ class MovieFixtures extends Fixture
             'year' => "2015",
         ],
         [
-            'title' => "Mad Max 2: Beyond Thunderdome",
+            'title' => "Mad Max 2",
             'year' => "1985",
         ],
         [
