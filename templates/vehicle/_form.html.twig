@@ -1,88 +1,88 @@
 {{ form_start(form,{'attr': {'class': 'm-auto'}}) }}
-<div class="container w-50 m-auto ">
+<div class="container w-50 justify-content-center ">
 
-	<div class="row ">
+	<div class="row d-flex justify-content-center">
 		<div class="col-5">
-			{{ form_row(form.title,{'attr': {'class': 'form-control rounded-0 text-white'}}) }}
+			{{ form_row(form.title,{'attr': {'class': 'form-control rounded-0 '}}) }}
 		</div>
 		<div class="col-5" id="some-custom-id">
-			{{ form_row(form.mileage,{'attr': {'class': 'form-control rounded-0 text-white'}}) }}
+			{{ form_row(form.mileage,{'attr': {'class': 'form-control rounded-0 '}}) }}
 		</div>
 	</div>
-	<div class="row">
+	<div class="row d-flex justify-content-center">
 		<div class="col-5" id="some-custom-id">
-			{{ form_row(form.fuel,{'attr': {'class': 'form-control rounded-0 text-white'}}) }}
+			{{ form_row(form.fuel,{'attr': {'class': 'form-control rounded-0 '}}) }}
 		</div>
 		<div class="col-5" id="some-custom-id">
-			{{ form_row(form.category,{'attr': {'class': 'form-control rounded-0 text-white'}}) }}
-		</div>
-	</div>
-	<div class="row">
-		<div class="col-5" id="some-custom-id">
-			{{ form_row(form.generalCondition,{'attr': {'class': 'form-control rounded-0 text-white'}}) }}
-		</div>
-		<div class="col-5" id="some-custom-id">
-			{{ form_row(form.transmition,{'attr': {'class': 'form-control rounded-0 text-white'}}) }}
+			{{ form_row(form.category,{'attr': {'class': 'form-control rounded-0 '}}) }}
 		</div>
 	</div>
-	<div class="row">
+	<div class="row d-flex justify-content-center">
+		<div class="col-5" id="some-custom-id">
+			{{ form_row(form.generalCondition,{'attr': {'class': 'form-control rounded-0 '}}) }}
+		</div>
+		<div class="col-5" id="some-custom-id">
+			{{ form_row(form.transmition,{'attr': {'class': 'form-control rounded-0'}}) }}
+		</div>
+	</div>
+	<div class="row d-flex justify-content-center">
 
 		<div class="col-5" id="some-custom-id">
-			{{ form_row(form.nbPlace,{'attr': {'class': 'form-control rounded-0 text-white'}}) }}
+			{{ form_row(form.nbPlace,{'attr': {'class': 'form-control rounded-0 '}}) }}
 		</div>
 		<div class="col-5" id="some-custom-id">
-			{{ form_row(form.picture,{'attr': {'class': 'form-control rounded-0 text-white'}}) }}
+			{{ form_row(form.picture,{'attr': {'class': 'form-control rounded-0'}}) }}
 		</div>
 	</div>
-	<div class="row">
+	<div class="row d-flex justify-content-center">
 
 		<div class="col-5" id="some-custom-id">
-			{{ form_row(form.location,{'attr': {'class': 'form-control rounded-0 text-white'}}) }}
+			{{ form_row(form.location,{'attr': {'class': 'form-control rounded-0 '}}) }}
 		</div>
 
 		<div class="col-5" id="some-custom-id">
-			{{ form_row(form.consumption,{'attr': {'class': 'form-control rounded-0 text-white'}}) }}
-		</div>
-	</div>
-	<div class="row">
-		<div class="col-5" id="some-custom-id">
-			{{ form_row(form.emissions,{'attr': {'class': 'form-control rounded-0 text-white'}}) }}
-		</div>
-
-
-		<div class="col-5" id="some-custom-id">
-			{{ form_row(form.movie,{'attr': {'class': 'form-control rounded-0 text-white'}}) }}
+			{{ form_row(form.consumption,{'attr': {'class': 'form-control rounded-0 '}}) }}
 		</div>
 	</div>
-	<div class="row ">
+	<div class="row d-flex justify-content-center">
+		<div class="col-5" id="some-custom-id">
+			{{ form_row(form.emissions,{'attr': {'class': 'form-control rounded-0 '}}) }}
+		</div>
+
+
+		<div class="col-5" id="some-custom-id">
+			{{ form_row(form.movie,{'attr': {'class': 'form-control rounded-0 '}}) }}
+		</div>
+	</div>
+	<div class="row d-flex justify-content-center">
 
 		<div class="col-5 " id="some-custom-id">
-			{{ form_row(form.quote,{'attr': {'class': 'form-control w-100 text-white'}}) }}
+			{{ form_row(form.quote,{'attr': {'class': 'form-control w-100 '}}) }}
 		</div>
 
 		<div class="col-5" id="some-custom-id">
-			{{ form_row(form.description,{'attr': {'class': 'form-control rounded-0 text-white'}}) }}
-		</div>
-	</div>
-	<div class="row">
-
-		<div class="col-5" id="some-custom-id">
-			{{ form_row(form.license,{'attr': {'class': 'form-control rounded-0 text-white'}}) }}
-		</div>
-
-		<div class="col-5" id="some-custom-id">
-			{{ form_row(form.availability,{'attr': {'class': 'form-check-input w-100 text-white'}}) }}
+			{{ form_row(form.description,{'attr': {'class': 'form-control rounded-0 '}}) }}
 		</div>
 	</div>
-	<div class="row">
+	<div class="row d-flex justify-content-center">
 
 		<div class="col-5" id="some-custom-id">
-			{{ form_row(form.gps,{'attr': {'class': 'form-check-input w-100 rounded-0 text-white'}}) }}
+			{{ form_row(form.license,{'attr': {'class': 'form-control rounded-0 '}}) }}
+		</div>
+
+		<div class="col-5" id="some-custom-id">
+			{{ form_row(form.availability,{'attr': {'class': 'form-check-input w-100 '}}) }}
+		</div>
+	</div>
+	<div class="row d-flex justify-content-center">
+
+		<div class="col-5" id="some-custom-id">
+			{{ form_row(form.gps,{'attr': {'class': 'form-check-input w-100 rounded-0 '}}) }}
 		</div>
 
 
 		<div class="col-5" id="some-custom-id">
-			{{ form_row(form.airConditioning,{'attr': {'class': 'form-check-input w-100 text-white'}}) }}
+			{{ form_row(form.airConditioning,{'attr': {'class': 'form-check-input w-100 '}}) }}
 		</div>
 	</div>
 	<div class="text-center ">
