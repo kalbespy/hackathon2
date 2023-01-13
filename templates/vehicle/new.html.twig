@@ -8,8 +8,10 @@
 		<h1 class="h2showPage">Create a new Vehicle</h1>
 
 		{{ include('vehicle/_form.html.twig') }}
-		<div class="w-100 text-center">
-			<a href="{{ path('app_vehicle_index') }}" class="text-center">back to list</a>
+		<div class="w-100 text-center pb-5">
+			<a href="{{ path('app_vehicle_index') }}" class="text-center">
+				<button class="btnCineCar">back to list</button>
+			</a>
 		</div>
 	</main>
 {% endblock %}
