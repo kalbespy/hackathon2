@@ -48,6 +48,8 @@ class VehicleController extends AbstractController
         if ($form->isSubmitted() && $form->isValid()) {
             $vehicleRepository->save($vehicle, true);
 
+            $this->addFlash('success', 'Car added !');
+
             return $this->redirectToRoute('app_vehicle_index', [], Response::HTTP_SEE_OTHER);
         }
 
@@ -74,6 +76,8 @@ class VehicleController extends AbstractController
         if ($form->isSubmitted() && $form->isValid()) {
             $vehicleRepository->save($vehicle, true);
 
+            $this->addFlash('success', 'Changes made !');
+
             return $this->redirectToRoute('app_vehicle_index', [], Response::HTTP_SEE_OTHER);
         }
 
@@ -90,6 +94,8 @@ class VehicleController extends AbstractController
 
         $vehicleRepository->save($vehicle, true);
 
+        $this->addFlash('success', 'Your reservation has been processed. Thanks !');
+
         return $this->redirectToRoute('app_vehicle_index', [], Response::HTTP_SEE_OTHER);
     }
 
@@ -98,6 +104,7 @@ class VehicleController extends AbstractController
     {
         if ($this->isCsrfTokenValid('delete' . $vehicle->getId(), $request->request->get('_token'))) {
             $vehicleRepository->remove($vehicle, true);
+            $this->addFlash('danger', 'Car deleted !');
         }
 
         return $this->redirectToRoute('app_vehicle_index', [], Response::HTTP_SEE_OTHER);
